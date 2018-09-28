@@ -18,16 +18,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A8A933C5-7412-4F0A-A02E-509440660A42</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Disconnect Bluetooth Device</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -37,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>BluetoothConnector</string>
+	<string>blueutil</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -48,7 +38,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./BluetoothConnector --connect {query}</string>
+				<string>./blueutil {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -89,7 +79,7 @@
 				<key>runningsubtext</key>
 				<string>Finding device...</string>
 				<key>script</key>
-				<string>./BluetoothConnector --listforalfred</string>
+				<string>./blueutil --alfred</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -110,29 +100,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>./BluetoothConnector --connect {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A8A933C5-7412-4F0A-A02E-509440660A42</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -148,21 +115,14 @@
 		<key>31AD6783-08D4-48E0-B323-39292BF089D6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>450</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>100</integer>
-		</dict>
-		<key>A8A933C5-7412-4F0A-A02E-509440660A42</key>
-		<dict>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>240</integer>
+			<integer>160</integer>
 		</dict>
 	</dict>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/pSpitzner/alfred-blueutil</string>
 </dict>
 </plist>
